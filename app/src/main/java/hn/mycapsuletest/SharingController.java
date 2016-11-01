@@ -10,6 +10,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Environment;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.io.File;
 import java.net.URI;
@@ -57,12 +58,12 @@ public class SharingController {
                 }
             }
 
-
             LabeledIntent[] extraIntents = intentList.toArray( new LabeledIntent[ intentList.size() ]);
             shareToApps.putExtra(Intent.EXTRA_INITIAL_INTENTS, extraIntents);
 
             // Broadcast the Intent.
             mActivity.startActivity(shareToApps);
+//            Toast.makeText(mActivity, "Your media is being uploaded!", Toast.LENGTH_SHORT).show();
         }
     }
 }

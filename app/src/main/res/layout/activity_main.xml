@@ -14,13 +14,47 @@
         android:layout_height="wrap_content"
         android:text="Upload"
         android:id="@+id/upload_button"
-        android:layout_below="@+id/image_load"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="119dp" />
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
 
     <ImageButton
         android:layout_width="400px"
         android:layout_height="400px"
         android:id="@+id/image_load"
         android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:id="@+id/instagram_upload"
+        android:background="@drawable/instagram_icon"
+        android:layout_gravity="left"
+        android:layout_below="@+id/upload_button"
+        android:layout_toEndOf="@+id/twitter_upload" />
+
+    <ImageButton
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:id="@+id/twitter_upload"
+        android:background="@drawable/twitter_icon"
+        android:layout_gravity="left"
+        android:layout_alignTop="@+id/facebook_upload"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:id="@+id/facebook_upload"
+        android:background="@drawable/facebook_icon"
+        android:layout_gravity="left"
+        android:layout_below="@+id/upload_button"
+        android:layout_toStartOf="@+id/twitter_upload" />
+
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoView"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/image_load"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

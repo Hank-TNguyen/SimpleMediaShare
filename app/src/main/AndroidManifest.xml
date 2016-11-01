@@ -20,7 +20,11 @@
             </intent-filter>
         </activity>
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
-        <provider android:authorities="com.facebook.app.FacebookContentProvider1792359664345816"
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0360bd1d2e976d077315e84f2c13a998fc8d685e"
+            />
+        <provider android:authorities="com.facebook.app.FacebookContentProvider1834015600213060"
             android:name="com.facebook.FacebookContentProvider"
             android:exported="true" />
     </application>
